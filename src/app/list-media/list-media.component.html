@@ -1,0 +1,9 @@
+<div class="card-deck">
+  <div class="card" *ngFor="let media of mediaArray">
+    <img class="card-img-top" [src]="mediaService.mediaUrl + media.filename.split('.')[0]+'-tn320.png'" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">{{media.title}}</h4>
+      <p class="card-text">{{media.description}}</p>
+    </div>
+  </div>
+</div>
