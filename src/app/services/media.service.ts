@@ -13,7 +13,7 @@ export class MediaService {
   }
 
   getAllMedia() {
-    return this.http.get(this.apiUrl + '/media');
+    return this.http.get(this.apiUrl + '/media?limit=200');
   }
 
 }
